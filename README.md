@@ -7,6 +7,6 @@ Les administrateurs seront en mesure de créer différents bâtiments et les usa
 Pour simplifier, le site ne demandera pas d’authentification. Deux routes distinctes permettront d’agir soit comme un administrateur soit comme un usager.
 La page d’accueil comportera deux liens pour passer de l’un à l’autre.
 
-J'ai developpé avec le framework Lavavel dans le logiciel Visual Studio Code.Les données sont sur une base de donnée MySQL.
+J'ai developpé avec le framework Lavavel dans le logiciel Visual Studio Code. Les données sont sur une base de données MySQL.
 
 On a 4 semaines pour le faire.
