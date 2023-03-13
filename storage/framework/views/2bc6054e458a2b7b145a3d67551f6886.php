@@ -22,13 +22,13 @@
                 <td><?php echo e($ligne->nom); ?></td>
                 <td><?php echo e($ligne->created_at); ?></td>
                 <td><?php echo e($ligne->updated_at); ?></td>
-                <td><a href="/Biens/delete/<?php echo e($ligne->id); ?>"><button>Supprimer</button></a>
-                    <a href="/Biens/update/<?php echo e($ligne->id); ?>"><button>Modifier</button></a>
+                <td><a href="<?php echo e(route('admin.biens.delete', ['id' => $ligne->id])); ?>"><button>Supprimer</button></a>
+                    <a href="<?php echo e(route('admin.biens.updateView', ['id' => $ligne->id])); ?>"><button>Modifier</button></a>
                 </td>
             </tr>
             <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
         </tbody>
     </table>
-    <a href="/Biens/add"><button>Ajouter une ligne</button></a>
+    <a href="<?php echo e(route('admin.biens.create')); ?>"><button>Ajouter une ligne</button></a>
 </body>
-</html><?php /**PATH C:\Users\loulo\Bureau\Laravel\Projet\resources\views/biens.blade.php ENDPATH**/ ?>
+</html><?php /**PATH C:\Users\loulo\Bureau\Laravel\Projet\resources\views/biens/admin/index.blade.php ENDPATH**/ ?>
